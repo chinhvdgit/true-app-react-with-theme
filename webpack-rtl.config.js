@@ -41,9 +41,9 @@ function mainConfig() {
       // output path based on the entries' filename
       filename: '[name].js',
     },
-    resolve: {
-      extensions: ['.scss'],
-    },
+    // resolve: {
+    //   extensions: ['.scss'],
+    // },
     plugins: [
       new MiniCssExtractPlugin({
         filename: '[name].css',
@@ -79,6 +79,22 @@ function mainConfig() {
         },
       ],
     },
+    resolve: {
+      extensions: ['.js', '.jsx', '.ts', '.tsx', '.jpg', '.scss'],
+      alias: {
+          "@Layouts": path.resolve(__dirname, "src/layouts/"),
+          "@Components": path.resolve(__dirname, "src/components/"),
+          "@Images": path.resolve(__dirname, "src/images/"),
+          "@Store": path.resolve(__dirname, "src/store/"),
+          "@Utils": path.resolve(__dirname, "src/utils"),
+          "@Styles": path.resolve(__dirname, 'src/styles/'),
+          "@Pages": path.resolve(__dirname, 'src/pages/'),
+          "@Services": path.resolve(__dirname, 'src/services/'),
+          "@Models": path.resolve(__dirname, 'src/models/'),
+          "@Core": path.resolve(__dirname, 'src/core/'),
+          "@Config": path.resolve(__dirname, "src/config/")
+      }
+  },
   }
 }
 

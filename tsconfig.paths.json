@@ -1,0 +1,19 @@
+// tsconfig.paths.json
+{
+  "compilerOptions": {
+    "baseUrl": "./src",
+    "paths": {
+      "@Store/*": [ "./store/*" ],
+      "@Core/*": [ "./core/*" ],
+      "@Components/*": [ "./components/*" ],
+      "@Images/*": [ "./images/*" ],
+      "@Styles/*": [ "./styles/*" ],
+      "@Models/*": [ "./models/*" ],
+      "@Pages/*": [ "./pages/*" ],
+      "@Layouts/*": [ "./layouts/*" ],
+      "@Services/*": [ "./services/*" ],
+      "@Utils": [ "./utils.ts" ],
+      "@Config/*": [ "./config/*" ]
+    }
+  }
+}
